@@ -1,0 +1,74 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- wow omg hey! -->
+		<title>staff guidelines</title>
+		<meta name="description" content="written by moon"/>
+		<meta name="author" content="belowthemoonlight"/>
+		<link rel="icon" href="/favicon.png" />
+		<meta name="theme-color" content="#121247">
+	</head>
+	<body>
+        <div class="page">
+            <div class="welcomescreen">
+                <h1>Welcome to the staff guidelines!</h1>
+                <p>These guidelines are made collaberatively by team members and leaders to give up to date and useful information for Discord, Event and Minecraft staff.</p>
+                <div class="buttongroup">
+                    <button class="option" onclick="goTo('discord')" style="width: 32%;">
+                        <h2>🔨 Discord staff</h2>
+                        <p>The guidelines for Discord moderators and administrators</p>
+                    </button>
+                    <button class="option" onclick="goTo('events')" style="width: 32%;">
+                        <h2>🎈 Events staff</h2>
+                        <p>The guidelines for Event staff and managers</p>
+                    </button>
+                    <button class="option" onclick="goTo('minecraft')" style="width: 32%;">
+                        <h2>🔪 Minecraft staff</h2>
+                        <p>The guidelines for Minecraft moderators, admins and administrators</p>
+                    </button>
+                </div>
+                <p>Hosted and created by <a href="/">@andwemoon</a>.</p>
+            </div>
+        </div>
+    </body>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            padding: 30px;
+        }
+        div.page {
+            width: 900px !important;
+            margin: 0 auto;
+        }
+        button.option {
+            background-color: transparent;
+            color: white;
+            border-color: transparent;
+            border-radius: 5px;
+            box-shadow: 0 0 7px 2px rgba(255, 255, 255, 0.2);
+            padding: 5px 15px;
+            text-align: left;
+            transition: box-shadow 0.3s ease;
+            text-decoration: none;
+        }
+        button.option:hover {
+            box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+        }
+        div.buttongroup {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            width: "100%";
+        }
+    </style>
+    <script>
+        function goTo(subpage) {
+            const currentPath = window.location.pathname.replace(/\/$/, ''); // remove trailing slash
+            window.location.href = `${currentPath}/${subpage}`;
+        }
+    </script>

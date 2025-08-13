@@ -1,0 +1,166 @@
+@font-face {
+  font-family: "SPACE";
+  src: url("/fonts/SPACE.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url("/fonts/SpaceMono-Regular.ttf") format("truetype");
+  font-display: auto;
+}
+
+:root {
+  --primary-color: #f6f3b0;
+  --secondary-color: #000000;
+  --accent-one: #121247;
+  --accent-two: #cccfe9;
+  --accent-three: #d4c5e1;
+  --p-size: 14px;
+  --h1-size: 24px;
+  --h2-size: 16px;
+  --h3-size: 14px;
+  --h4-size: 14px;
+}
+
+html,
+body {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.page {
+  width: 800px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "SPACE";
+  font-weight: normal;
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+p,
+li,
+label {
+  font-size: var(--p-size);
+  font-family: "Space Mono";
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+a {
+  color: var(--accent-two);
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+a:hover {
+  color: var(--accent-three);
+}
+
+td {
+  vertical-align: top;
+}
+
+td.maintd {
+  width: 600px;
+  min-width: 600px;
+  max-width: 600px;
+  overflow-x: hidden;
+}
+
+td.menutd {
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  overflow-x: hidden;
+}
+
+.centre {
+  text-align: center;
+}
+.vertcentre {
+    vertical-align: center;
+    align-content: center;
+}
+
+.box {
+  background-color: var(--accent-one);
+  display: block;
+  outline: 2px solid var(--primary-color);
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin: 15px 5px;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+button {
+    font-size: var(--p-size);
+    font-family: "Space Mono";
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.popup {
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 9998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-moz-selection
+  background: #161615;
+}
+
+::selection {
+  background: #161615;
+}
